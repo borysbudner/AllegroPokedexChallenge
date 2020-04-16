@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" type="text/css" />
+    <title>Pokedex - Front-End Software Engineer - Intern - Borys Budner</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img src="./src/assets/poke_logo.png" alt="Pokemon logo" width="180" height="66">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <div class="album py-4 bg-light">
+        <div class="container">
+          <div class="form-group form-inline">
+            <label for="filterType" class="col-form-label mr-sm-2"
+              >Filters:
+            </label>
+            <select id="filterType" class="custom-select mr-sm-2">
+              <option disabled value selected>Select a type</option>
+              <option value="0" id="all">All</option>
+              <option value="1" id="normal">Normal</option>
+              <option value="2" id="fighting">Fighting</option>
+              <option value="3" id="flying">Flying</option>
+              <option value="4" id="poison">Poison</option>
+              <option value="5" id="ground">Ground</option>
+              <option value="6" id="rock">Rock</option>
+              <option value="7" id="bug">Bug</option>
+              <option value="8" id="ghost">Ghost</option>
+              <option value="9" id="steel">Steel</option>
+              <option value="10" id="fire">Fire</option>
+              <option value="11" id="water">Water</option>
+              <option value="12" id="grass">Grass</option>
+              <option value="13" id="electric">Electric</option>
+              <option value="14" id="psychic">Psychic</option>
+              <option value="15" id="ice">Ice</option>
+              <option value="16" id="dragon">Dragon</option>
+              <option value="17" id="dark">Dark</option>
+              <option value="18" id="fairy">Fairy</option>
+            </select>
+          </div>
+          <div id="list" class="row">
+            <div>Loading list...</div>
+          </div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

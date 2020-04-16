@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    min-width: 240px;
+  }
+  .navbar {
+    min-width: 240px;
+  }
+  .disappear {
+    display: none;
+  }
+  #pagination {
+    text-align: center;
+    margin: 10px;
+  }
+  .pokemon-more {
+    margin-top: 20px;
+  }
+  .pokemon-color:hover {
+    color: #356baf;
+    background-color: #ffcb05;
+    border-color: #356baf;
+  }
+  .white-background,
+  .next-page-hover-deactivated:hover {
+    background-color: white;
+    color: #356baf;
+    border-color: #356baf;
+  }
+  .hover-pokemon-color:hover,
+  .pokemon-color {
+    color: #ffcb05;
+    background-color: #356baf;
+    border-color: #ffcb05;
+  }
